@@ -4,11 +4,11 @@
 For experienced users, please scroll to the bottom for the TL;DR instructions. The instructions below are intended for newer users starting out with Fleet.
 
 ## Getting started
-###Pre-requisites:
+Pre-requisites:
 - A working Rancher 2.5.6+ cluster
 - A forked version of this repository
 
-###Instructions:
+Instructions:
 - Edit the `ingress-ip-domain` under `Settings` in the Cluster Manager UI
   - Change from `xip.io` to `nip.io`
 - Deploy two or more clusters (provider agnostic)
@@ -50,7 +50,7 @@ For experienced users, please scroll to the bottom for the TL;DR instructions. T
     - Find the hostname from your ingress and click on it
 - Now view the app running in both tabs!
 
-####To show multi-cluster rolling update:
+To show multi-cluster rolling update:
 - Navigate back to [This git repo](./)
   - Update the `COW_COLOR` variable in fleet.yaml
   - Commit/Save your changes
