@@ -1,8 +1,9 @@
 # rancher-federal-fleet-demo
 
 ## A demo of Fleet managing apps in multiple clusters via Rancher
-For experienced users, please scroll to the bottom for the TL;DR instructions. The instructions below are intended for newer users starting out with Fleet.
+For experienced users, please scroll to the bottom for the TL;DR instructions. 
 
+The instructions directly below are intended for newer users starting out with Fleet.
 ## Getting started
 Pre-requisites:
 - A working Rancher 2.5.6+ cluster
