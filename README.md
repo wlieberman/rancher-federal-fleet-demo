@@ -1,14 +1,15 @@
 # rancher-federal-fleet-demo
 
 ## A demo of Fleet managing apps in multiple clusters via Rancher
-For experienced users, please scroll to the bottom for the TL;DR instructions. The instructions below are intended for newer users starting out with Fleet.
+For experienced users, please scroll to the bottom for the TL;DR instructions. 
 
+The instructions directly below are intended for newer users starting out with Fleet.
 ## Getting started
-###Pre-requisites:
+Pre-requisites:
 - A working Rancher 2.5.6+ cluster
 - A forked version of this repository
 
-###Instructions:
+Instructions:
 - Edit the `ingress-ip-domain` under `Settings` in the Cluster Manager UI
   - Change from `xip.io` to `nip.io`
 - Deploy two or more clusters (provider agnostic)
@@ -50,7 +51,7 @@ For experienced users, please scroll to the bottom for the TL;DR instructions. T
     - Find the hostname from your ingress and click on it
 - Now view the app running in both tabs!
 
-####To show multi-cluster rolling update:
+To show multi-cluster rolling update:
 - Navigate back to [This git repo](./)
   - Update the `COW_COLOR` variable in fleet.yaml
   - Commit/Save your changes
@@ -62,7 +63,7 @@ This works with any number of clusters.
 Please try it out and give feedback!
 
 
-##TL;DR Instructions (for experienced Rancher admins)
+## TL;DR Instructions (for experienced Rancher admins)
 - Fork this repo
 - Create n number of clusters via Rancher (or import into Rancher)
 - Update ingress wildcard to nip.io
@@ -71,4 +72,3 @@ Please try it out and give feedback!
 - Target it to your cluster group
 - Watch the magic happen
 - Make changes in this repo and watch the rolling deployments
-
