@@ -62,7 +62,7 @@ This works with any number of clusters.
 Please try it out and give feedback!
 
 
-##TL;DR Instructions (for experienced Rancher admins)
+## TL;DR Instructions (for experienced Rancher admins)
 - Fork this repo
 - Create n number of clusters via Rancher (or import into Rancher)
 - Update ingress wildcard to nip.io
