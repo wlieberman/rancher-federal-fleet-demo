@@ -1,7 +1,7 @@
 # rancher-federal-fleet-demo
 
 ## A demo of Fleet managing apps in multiple clusters via Rancher
-For experienced users, please scroll to the bottom for the TL;DR instructions. 
+**For experienced users, please scroll to the bottom for the TL;DR instructions.** 
 
 The instructions directly below are intended for newer users starting out with Fleet.
 ## Getting started
@@ -65,10 +65,8 @@ Please try it out and give feedback!
 
 ## TL;DR Instructions (for experienced Rancher admins)
 - Fork this repo
-- Create n number of clusters via Rancher (or import into Rancher)
-- Update ingress wildcard to nip.io
-- Create a cluster group
-- Create a git repo containing [this forked repository](./)
-- Target it to your cluster group
+- Ensure your ingress wildcard points to nip.io
+- Create a Fleet git repo pointing to your forked version of this repo
+- Target it to multiple clusters
 - Watch the magic happen
 - Make changes in this repo and watch the rolling deployments
