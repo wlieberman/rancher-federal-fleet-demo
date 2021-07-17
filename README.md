@@ -70,4 +70,3 @@ Please try it out and give feedback!
 - Target it to multiple clusters
 - Watch the magic happen
 - Make changes in this repo and watch the rolling deployments
-
