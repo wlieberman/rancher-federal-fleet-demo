@@ -14,6 +14,8 @@ helm:
 diff:
   comparePatches:
   - apiVersion: networking.k8s.io/v1
+    name: rancher-federal-rancher-demo
+    namespace: default
     kind: Ingress
     operations:
     - {"op": "remove", "path": "/spec/rules/0/host"}        
