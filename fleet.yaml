@@ -1,10 +1,12 @@
 defaultNamespace: default
 helm:
-  chart: https://github.com/shraderdm/charts/blob/main/assets/rancher-demo-0.2.0.tgz?raw=true
+  chart: https://github.com/shraderdm/charts/blob/main/assets/rancher-demo-0.2.1.tgz?raw=true
   values:
+    fullnameOverride: "rancher-demo"
     env:
       SHOW_VERSION: true
       COW_COLOR: "white"
+      SKIP_ERRORS: true
     ingress:
       hosts:
         - host: nip.io
@@ -14,15 +16,15 @@ helm:
     autoscaling:
       enabled: true
       minReplicas: 3
-      maxReplicas: 100
+      maxReplicas: 30
       targetCPUUtilizationPercentage: 80
 
 
 diff:
   comparePatches:
   - apiVersion: networking.k8s.io/v1
-    name: rancher-federal-rancher-demo
+    name: rancher-demo
     namespace: default
     kind: Ingress
     operations:
-    - {"op": "remove", "path": "/spec/rules/0/host"}       
+    - {"op": "remove", "path": "/spec/rules/0/host"}     
