@@ -2,6 +2,7 @@ defaultNamespace: default
 helm:
   chart: https://github.com/shraderdm/charts/blob/main/assets/rancher-demo-0.2.0.tgz?raw=true
   values:
+    fullnameOverride: "rancher-demo"
     env:
       SHOW_VERSION: true
       COW_COLOR: "blue"
@@ -22,7 +23,7 @@ helm:
 diff:
   comparePatches:
   - apiVersion: networking.k8s.io/v1
-    name: rancher-federal-rancher-demo
+    name: rancher-demo
     namespace: default
     kind: Ingress
     operations:
