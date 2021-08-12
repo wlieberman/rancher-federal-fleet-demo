@@ -5,6 +5,7 @@ helm:
     env:
       SHOW_VERSION: true
       COW_COLOR: "white"
+      SKIP_ERRORS: true
     ingress:
       hosts:
         - host: nip.io
