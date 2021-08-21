@@ -9,7 +9,7 @@ helm:
       SKIP_ERRORS: true
     ingress:
       hosts:
-        - host: nip.io
+        - host: sslip.io
           paths:
             - path: /
               pathType: ImplementationSpecific
