@@ -16,7 +16,7 @@ helm:
     autoscaling:
       enabled: true
       minReplicas: 3
-      maxReplicas: 100
+      maxReplicas: 25
       targetCPUUtilizationPercentage: 80
 
 
