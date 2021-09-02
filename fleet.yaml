@@ -5,7 +5,7 @@ helm:
     fullnameOverride: "rancher-demo"
     env:
       SHOW_VERSION: true
-      COW_COLOR: "blue"
+      COW_COLOR: "white"
       SKIP_ERRORS: true
     ingress:
       hosts:
@@ -15,7 +15,7 @@ helm:
               pathType: ImplementationSpecific
     autoscaling:
       enabled: true
-      minReplicas: 3
+      minReplicas: 4
       maxReplicas: 25
       targetCPUUtilizationPercentage: 80
 
