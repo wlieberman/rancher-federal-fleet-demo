@@ -67,7 +67,7 @@ Please try it out and give feedback!
 
 ## TL;DR Instructions (for experienced Rancher admins)
 - Fork this repo
-- Ensure your ingress wildcard points to nip.io
+- Ensure your ingress wildcard points to sslip.io
 - Create a Fleet git repo pointing to your forked version of this repo
 - Target it to multiple clusters
 - Watch the magic happen
