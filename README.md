@@ -1,10 +1,17 @@
 # rancher-federal-fleet-demo
 
 ## A demo of Fleet managing apps in multiple clusters via Rancher
-**For experienced users, please scroll to the bottom for the TL;DR instructions.** 
 
-The instructions directly below are intended for newer users starting out with Fleet.
+## TL;DR Instructions (for experienced Rancher admins)
+- Fork this repo
+- Create a Fleet git repo pointing to your forked version of this repo
+- Target it to multiple clusters
+- Watch the magic happen
+- Make changes in this repo and watch the rolling deployments
+
 ## Getting started
+The instructions below are intended for newer users starting out with Fleet.
+
 Pre-requisites:
 - A working Rancher 2.6 cluster
 - A forked version of this repository
@@ -60,11 +67,3 @@ To show multi-cluster rolling update:
 This works with any number of clusters.
 
 Please try it out and give feedback!
-
-
-## TL;DR Instructions (for experienced Rancher admins)
-- Fork this repo
-- Create a Fleet git repo pointing to your forked version of this repo
-- Target it to multiple clusters
-- Watch the magic happen
-- Make changes in this repo and watch the rolling deployments
