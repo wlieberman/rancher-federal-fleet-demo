@@ -15,8 +15,8 @@ helm:
               pathType: ImplementationSpecific
     autoscaling:
       enabled: true
-      minReplicas: 3
-      maxReplicas: 30
+      minReplicas: 4
+      maxReplicas: 25
       targetCPUUtilizationPercentage: 80
 
 
@@ -27,4 +27,4 @@ diff:
     namespace: default
     kind: Ingress
     operations:
-    - {"op": "remove", "path": "/spec/rules/0/host"}     
+    - {"op": "remove", "path": "/spec/rules/0/host"}        

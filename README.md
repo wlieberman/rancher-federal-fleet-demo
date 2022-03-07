@@ -10,8 +10,10 @@ Pre-requisites:
 - A forked version of this repository
 
 Instructions:
+
+***Note: Step 1 is only required for Rancher 2.5. Rancher 2.6 uses sslip.io for dynamic DNS by default***
 - Edit the `ingress-ip-domain` under `Settings` in the Cluster Manager UI
-  - Change from `xip.io` to `nip.io`
+  - Change from `xip.io` to `sslip.io`
 - Deploy two or more clusters (provider agnostic)
 - Navigate to `Cluster Explorer` -> `Continuous Delivery`
   - Under `Continuous Delivery` click `Cluster Groups` (sidebar)
@@ -65,7 +67,7 @@ Please try it out and give feedback!
 
 ## TL;DR Instructions (for experienced Rancher admins)
 - Fork this repo
-- Ensure your ingress wildcard points to nip.io
+- Ensure your ingress wildcard points to sslip.io
 - Create a Fleet git repo pointing to your forked version of this repo
 - Target it to multiple clusters
 - Watch the magic happen
