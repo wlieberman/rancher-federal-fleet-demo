@@ -18,7 +18,6 @@ Pre-requisites:
 
 Instructions:
 
-***Note: Step 1 is only required for Rancher 2.5. Rancher 2.6 uses sslip.io for dynamic DNS by default***
 - Deploy two or more clusters (provider agnostic)
 - Navigate to `Cluster Explorer` -> `Continuous Delivery`
   - Under `Continuous Delivery` click `Cluster Groups` (sidebar)
