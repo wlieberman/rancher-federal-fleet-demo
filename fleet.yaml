@@ -28,3 +28,15 @@ diff:
     kind: Ingress
     operations:
     - {"op": "remove", "path": "/spec/rules/0/host"}        
+
+targetCustomizations:
+  - name: cloud-service-providers
+    helm:
+      values:
+        service:
+          type: LoadBalancer
+        ingress:
+          enabled: false
+    clusterSelector:
+      matchLabels:
+        csp: true
