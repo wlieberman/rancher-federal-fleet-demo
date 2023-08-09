@@ -9,7 +9,7 @@ helm:
       SKIP_ERRORS: true
     ingress:
       hosts:
-        - host: sslip.io
+        - host: billylieberman.com
           paths:
             - path: /
               pathType: ImplementationSpecific
