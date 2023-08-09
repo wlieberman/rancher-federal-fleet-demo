@@ -14,7 +14,7 @@ helm:
             - path: /
               pathType: ImplementationSpecific
     autoscaling:
-      enabled: true
+      enabled: false
       minReplicas: 4
       maxReplicas: 25
       targetCPUUtilizationPercentage: 80
