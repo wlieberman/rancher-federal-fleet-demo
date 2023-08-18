@@ -9,7 +9,7 @@ helm:
       SKIP_ERRORS: true
     ingress:
       hosts:
-        - host: billylieberman.com
+        - host: rged.rgs.billylieberman.com
           paths:
             - path: /
               pathType: ImplementationSpecific
